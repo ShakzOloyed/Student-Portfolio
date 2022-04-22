@@ -1,112 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student-Portfolio</title>
   <script src="https://kit.fontawesome.com/f45b446b61.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
+  <!-- Header start -->
   <header>
-    <nav>
-      <ul>
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-linkedin"></i>
-      </ul>
+    <nav class='navbar'>
+      <div id='log'>Shakz-Codeing</div>
+      <a href="#" id="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class='menu-items'>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>  
+        </ul>
+      </div>
     </nav>
   </header>
-  <main>
-    <!-- hero start -->  
-      <section class='hero'>
-        <div class='hero-text'>
-         <h1>HI, I'M SHAKIRAT BLOGS</h1>
-         <h2>I'm a Front-End Developer from London</h2>
+  
+<!-- End of Header section -->
+
+  <!-- hero start -->
+  <section class='hero'>
+    <header id='header-icons'>
+      <div class='nav'>
+        <li><i class="fa-brands fa-github"></i></li>
+        <br>
+        <li><i class="fa-brands fa-linkedin"></i></li>
+      </div>
+
+      <div class='hero-text'>
+        <h1>HI, I'M SHAKIRAT BLOGS</h1>
+        <h2>I'm a Front-End Developer from London</h2>
         <button>Contact Me</button>
       </div>
-      </section>
-    <section id='info'>
-      <h2>ABOUT ME</h2>
-      <p>I'm a Front End Developer from London, UK. I have experience in responsive CSS, JavaScript and React and have just finished a bootcamp with Purple Beard. </p>
-    </section>
+  </section>
+  <section id='info'>
+    <h2>ABOUT ME</h2>
+    <p>I'm a Front End Developer from London, UK. I have experience in responsive CSS, JavaScript and React and have
+      just finished a bootcamp with Purple Beard. </p>
+  </section>
 
+  </header>
+
+  <main>
     <section class='portfolio'>
-      <h2>Portfolio</h2> 
+      <h2>Portfolio</h2>
       <div class='container card-1'>
         <div class='upper'></div>
-        <div class='bottom'>        
-          <h3>Project Title 1</h3>   
+        <div class='bottom'>
+          <h3>Project Title 1</h3>
           <ul>
             <li>Live Website Link:</li>
             <li>GitHub Link:</li>
             <li>Technologies Used: CSS, JavaScript, React</li>
             <li>Summary: An API app</li>
           </ul>
-  </div>
-      </div>
-      <div class='container card-2'>
-        <div class='upper'></div>
-        <div class='bottom'>        
-          <h3>Project Title 2</h3>   
-          <ul>
-            <li>Live Website Link:</li>
-            <li>GitHub Link:</li>
-            <li>Technologies Used: CSS, JavaScript, React</li>
-            <li>Summary: An CRUD app</li>
-          </ul>
-  </div>
-      </div>
-      <div class='container card-3'>
-        <div class='upper'></div>
-        <div class='bottom'>        
-          <h3>Project Title 3</h3>   
-          <ul>
-            <li>Live Website Link:</li>
-            <li>GitHub Link:</li>
-            <li>Technologies Used: CSS, JavaScript, React</li>
-            <li>Summary: An React app</li>
-          </ul>
-  </div>
-      </div>
-    </section>
-    <section class='contact info'> 
-      <h2>Get in Touch</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, aliquid. Aspernatur nihil corrupti adipisci non quasi dolor officia inventore molestiae reprehenderit laboriosam eaque maxime commodi similique perferendis, fugiat architecto eveniet!
-      </p>
-      <div>
-        <ul class='icon'>
-          <li><i class="fa-brands fa-github"></i></li>
-          <li><i class="fa-brands fa-linkedin"></i></li>
-        </ul>
         </div>
-
     </section>
-    <section>
-      <h2>Send a message</h2>
-      <form action="">
-      <label for="firstname">First Name</label>
-      <br/>
-      <input type="text" id="firstname" name="firstName" required/>
-      <br/>
-      <label for="surname">Surname</label>
-      <br/>
-      <input type="text" id="surname" name="surname" required/>
-      <br/>
-      <label for="Email">E-mail</label>
-      <br/>
-      <input type="email" name="email" id="email" required>
-      <br/>
-      <label for="message">Message</label>
-      <br/>
-      <textarea name="message"rows="10" cols="50"></textarea>
-      <br/>
-      <button type="submit" class="btn">Send a message</button>  
-      </form>
+    </div>
+    <div class='container card-2'>
+      <div class='upper'></div>
+      <div class='bottom'>
+        <h3>Project Title 2</h3>
+        <ul>
+          <li>Live Website Link:</li>
+          <li>GitHub Link:</li>
+          <li>Technologies Used: CSS, JavaScript, React</li>
+          <li>Summary: An CRUD app</li>
+        </ul>
+      </div>
+    </div>
+    <div class='container card-3'>
+      <div class='upper'></div>
+      <div class='bottom'>
+        <h3>Project Title 3</h3>
+        <ul>
+          <li>Live Website Link:</li>
+          <li>GitHub Link:</li>
+          <li>Technologies Used: CSS, JavaScript, React</li>
+          <li>Summary: An React app</li>
+        </ul>
+      </div>
+    </div>
     </section>
+    <section id='social-contact-info'>
+      <div>
+        <h2>Get in Touch</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, aliquid. Aspernatur nihil corrupti
+          adipisci non quasi dolor officia inventore molestiae reprehenderit laboriosam eaque maxime commodi similique
+          perferendis, fugiat architecto eveniet!
+        </p>
+      </div>
+      <div class='social-icons'>
+        <a href="https://github.com/ShakzOloyed" target='_blank'>
+          <i class="fa-brands fa-github">My GitHub</i>
 
+        </a>
+        <br>
+        <a href="http://linkedin.com/in/shakirat-oloyede-24433753" target='_blank'>
+          <i class="fa-brands fa-linkedin">My LinkedIn</i>
+
+        </a>
+
+      </div>
+
+      <div class='contact-info'>
+        <h2>Send a message</h2>
+        <form id='form' action="">
+          <label for="firstname">First Name</label>
+          <br />
+          <input type="text" id="firstname" name="firstName" required />
+          <br />
+          <label for="surname">Surname</label>
+          <br />
+          <input type="text" id="surname" name="surname" required />
+          <br />
+          <label for="Email">E-mail</label>
+          <br />
+          <input type="email" name="email" id="email" required>
+          <br />
+          <label for="message">Message</label>
+          <br />
+          <textarea name="message" placeholder="Please type your message here" rows="10" cols="30"></textarea>
+          <br />
+          <button type="submit" class="btn">Send a message</button>
+        </form>
+      </div>
+    </section>
   </main>
-  <footer><p>&copy; Copyright Shakirat Bloggs 2022</p></footer>
+  <footer>
+    <p>&copy; Copyright Shakirat Bloggs 2022</p>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
+
 </html>

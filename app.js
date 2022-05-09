@@ -1,7 +1,16 @@
-const burgerIcon = document.querySelector("#toggle-button");
-const menuItems = document.querySelectorAll(".menu-items");
+const hamburgerIcon = document.querySelector(".hamburger-icon");
+const menuItems = document.querySelectorAll(".nav-menu");
 
+console.log("Hello");
 
-burgerIcon.addEventListener("click", () => {
+  hamburgerIcon.addEventListener("click", () => {
+  hamburgerIcon.classList.toggle("active");
   menuItems.classList.toggle("active");
+
 });
+
+document.querySelector(".nav-links").forEach (n => n.addEventListener("click", () => {
+  hamburgerIcon.classList.remove("active");
+  menuItems.classList.remove("active");
+
+}));

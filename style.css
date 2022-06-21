@@ -564,13 +564,12 @@ img {
 /* ========= Contact Section ========== */
 
 .contact_container{
-  display: grid;
-  grid-template-columns: 400px 440px;
+  grid-template-columns: 500px 540px;
   column-gap: 3rem;
+
   justify-content: center;
-  align-items: center;
 }
-.contact-info{
+.contact_info{
   display: grid;
   row-gap: 1rem;
 }
@@ -589,7 +588,7 @@ img {
   padding: 1rem;
   border-radius: .5rem;
   text-align: center;
-  margin-bottom: .75rem;
+  /* margin-bottom: .75rem; */
 }
 .contact_card i{
   font-size: 1.8rem;
@@ -646,68 +645,42 @@ img {
   margin-bottom: 1rem;
 
 } */
-/* #social-contact-info p {
+.info p {
   font-size: 14px;
-} */
+}
 .contact_btn{
-  color: hsl(342, 92%, 46%);
+  color: #ffff;
   display: flex;
   align-items: center;
-  column-gap: .25rem;
+  /* column-gap: .25rem; */
   cursor: pointer;
-  
+  background: hsl(342, 92%, 46%);
+  color: white;
+  padding: .75rem 1.4rem;
+  border-radius: .25rem;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  z-index: 1;
+  transition: .4s;
+  margin: 0.5rem 1rem 0.25rem 1rem;
+
+ 
 }
-.contact_btn-icon{
+.contact_btn {
+  color: white;
   font-size: 1rem;
   transition: .3s;
-
 }
 
-.contact-info #form{
-  /* position: absolute;
-  top: 0; */
-  /* width: 100%;
-  height: 100%; */
-}
-#social-contact-info, 
-.social-icons{
-  /* display: flex;
-  flex-direction: column; */
-  /* font-size: 2em; */
-  /* color: white;
-  text-decoration: none;
-  padding: 10px; */
-  /* margin: 10px; */
 
-}
-
-/* #social-contact-info .social-icons {
-  display: flex;
-  flex-direction: column;
-  font-size: 30px;
-
-} */
-.social-icons:hover{
+.contact_btn-icon:hover{
   color: #555;
 
 }
 
-.social-icons i{
-  font-size: 2.5rem;
-  /* color: azure; */
-}
-.contact-info{
-  /* grid-template-columns: 300PX 340px;
-  column-gap: 3rem;
-  justify-content: center;
-  align-items: center; */
-}
 
-.contact-info form {
-  /* display: flex;
-  flex-direction: row;
-  margin: 0.5rem 1rem 0.5rem 1rem; */
-}
+
 input[type=text],
 input[type=email]
 {
@@ -719,8 +692,7 @@ input[type=email]
   color: #ffff;
   font-weight: 500;
   font-size: 1rem;
- 
-
+  margin: 0.5rem 1rem 0.5rem 1rem;
 }
 textarea {
   width: 100%;
@@ -734,20 +706,22 @@ textarea {
   font-weight: 500;
   font-size: 1rem;
   resize: none;
+  margin: 0.5rem 1rem 0.5rem 1rem;
+  
 }
 label{
   color: #ffff;
 }
 
 .btn {
-  background-color: #0ed48b;
+  /* background-color: #0ed48b;
   color: white;
   border: none;
   padding: 16px 32px;
   margin: 20px 2px;
   cursor: pointer;
   font-size: 14px;
-  border-radius: 4px;
+  border-radius: 4px; */
 }
 
 /* footer style start */

@@ -731,35 +731,33 @@ input{
   width: 100%;
   padding: .6rem 1.2rem;
   border: 3px solid #555;
-  border-radius: .50rem;
+  border-radius: .25rem;
   background: transparent;
   color: #ffff;
   font-weight: 500;
   font-size: 1rem;
   /* margin: 0.5rem 1rem 0.5rem 1rem; */
   margin-top: .75rem;
-
- 
-
 }
 textarea {
   width: 100%;
   min-height: 150px;
   padding: 12px 20px;
   box-sizing: border-box;
-  border: 2px solid #555;
-  border-radius: .50rem;
+  border: 3px solid #555;
+  border-radius: .25rem;
   background: transparent;
   color: #ffff;
   font-weight: 500;
   font-size: 1rem;
-  margin-top: 1.9rem;
+  margin-top: 1rem;
   margin-bottom: 1.9rem;
   resize: none;
-  
 }
 label{
   color: #ffff;
+  font-weight: bold;
+  
 }
 
 .btn {
@@ -779,10 +777,34 @@ label{
 
 /* footer style start */
 footer {
-  background-color: grey;
+  background-color: rgba(255, 255, 255, 0.08);
   text-align: center;
   padding: 20px 0;
+  color: #ffff;
 }
+.footer_icon{
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffff;
+  line-height: 2;
+  margin-right: 8px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  
+
+}
+.footer_icon{
+  transform: scale(1.1);
+  transition: 0.3s; 
+  
+}  
+.footer_icon:hover{
+  color: hsl(342, 92%, 46%);
+}
+
 
 /* footer style end */
 

@@ -14,3 +14,5 @@ document.querySelector(".nav-links").forEach (n => n.addEventListener("click", (
   menuItems.classList.remove("active");
 
 }));
+
+// INPUT ANIMATION

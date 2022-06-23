@@ -288,21 +288,21 @@
         <form action="" class='contact_form'>
           <div class='input_container'>
             <label for="firstname">First Name</label>
-            <input type="text" id="firstname" name="firstName" placeholder='Enter First-Name' required>
+            <input type="text" id="firstname" name="firstName" class='input' placeholder='Enter First-Name' required>
           </div>
 
           <div class='input_container'>
             <label for="surname">Surname</label>
-            <input type="text" id="surname" name="surname" placeholder='Enter Surname' required>
+            <input type="text" id="surname" name="surname" class='input' placeholder='Enter Surname' required>
           </div>
 
           <div class='input_container'>
             <label for="Email">E-mail</label>
-            <input type="email" name="email" id="email" placeholder='Enter Email' required>
+            <input type="email" name="email" id="email" class='input' placeholder='Enter Email' required>
           </div>
           <div>
           <label for="message">Message</label>
-          <textarea name="message" placeholder="Please type your message here" rows="10" cols="30"></textarea>
+          <textarea name="message" class='input' placeholder="Please type your message here" rows="10" cols="30"></textarea>
         </div>
 
           <button type="submit" class="contact_btn"><i class="fa-solid fa-paper-plane-top btn-icon"></i>
@@ -318,13 +318,17 @@
   <!-- ================= Footer section ===================== -->
   <footer>
     <p>&copy; Copyright 2022 Design by Shakirat</p>
-    <i class="fa-solid fa-envelope" class='contact_card-icon'></i>
-    <a href="https://github.com/ShakzOloyed" target='_blank'>
+    <div class='footer_social'>
+    <a href="" target='_blank' class='footer_icon'>
+      <i class="fa-solid fa-envelope" class='footer_icon'></i>
+    </a>
+    <a href="https://github.com/ShakzOloyed" target='_blank' class='footer_icon'>
       <i class="fa-brands fa-github"></i>
     </a>            
-    <a href="http://linkedin.com/in/shakirat-oloyede-24433753" target='_blank'>
+    <a href="http://linkedin.com/in/shakirat-oloyede-24433753" target='_blank' class='footer_icon'>
       <i class="fa-brands fa-linkedin"></i>
     </a>
+  </div>
 
 
 

@@ -25,12 +25,14 @@
 <body>
   <!-- ============= HEADER SECTION =============== -->
   <header>
-      <div id='logo'><a href="#">Shakirat Blogs</a></div>
+      <div id='logo'><a href="#"><span>S</span>hak<span>i</span>rat</a></div>
     <nav class='nav-menu'>
         <ul>
           <li><a href="#" class='menu-item'>Home</a></li>
           <li><a href="#" class='menu-item'>About</a></li>
+          <li><a href="#" class='menu-item'>My Skills</a></li>
           <li><a href="#" class='menu-item'>Portfolio</a></li>
+          <li><a href="#" class='menu-item'>Recent Works</a></li>
           <li><a href="#" class='menu-item'>Contact</a></li>  
         </ul>
       </nav>      
@@ -68,13 +70,14 @@
   <section class='about section' id='aboutMe'>
     <h2 data-heading="My Intro" class='section_title'>About Me</h2>
     <div class='about_container container'>
-      <img src="img/christina-wocintechchat-com-L85a1k-XqH8-unsplash.jpg" alt="" class='about_img'>
+          <img src="img/christina-wocintechchat-com-L85a1k-XqH8-unsplash.jpg" alt="" class='about_img'>
+      <!-- <img src="img/christina-wocintechchat-com-L85a1k-XqH8-unsplash.jpg" alt="" class='about_img'> -->
     
         <div class='about_data'>
-          <h3>I'm a Front End Developer from London, UK.</h3> 
+          <h3>I'm a Front End Developer from London, UK</h3> 
           <p>I have experience in responsive CSS, JavaScript, React and UI Design and have
           just finished a Bootscamp with Purple Beard. </p>
-          <div class="about_info grid">
+          <div class="about_info">
               <div class="about_box">
                 <i class="fa-solid fa-file-certificate about_icon"></i>
                 <h3 class="about_title">Completed</h3>
@@ -92,8 +95,7 @@
                 <h3 class="about_title">sgrgg</h3>
                 <span class="about_subtitle">esfrgesb</span>
               </div>
-            <a href="#contact" class="about_button"><i class="fa-solid fa-user button icon"></i>
-              Contact Me
+            <a href="#contact" class="about_button"><i class="fa-solid fa-user button icon"></i> Contact Me
             </a>
 
           </div>
@@ -102,9 +104,9 @@
   </section>
 
   <!-- ============ SKILLS SECTION =============== -->
-  <section class='skills section' id='skills'>
+  <section class='skills section container' id='skills'>
         <h2 data-heading="Abilities" class='section_title'>My Skills Gained</h2>
-      <div class="row skills-content container">
+      <div class="row_skills-content">
         <div class="col-lg-6">
           <div class="progress">
             <span class="skill">HTML5<i class="val">90%</i></span>
@@ -163,13 +165,15 @@
         </div>
       </div>
   </section>
-  <!-- ====================== Portfolio SECTION ================== -->
+  <!-- ====================== SERVICES SECTION ================== -->
 
-  <section class='portfolio'>
-    <div class='portfolioTitle'><h2>Portfolio</h2></div>
+  <section class='portfolio container'>
+    <h2 data-heading='My Services' class='section_title'>Services</h2>
+
+    <!-- <div class='portfolioTitle'><h2>Portfolio</h2></div> -->
       <!-- <div class='container'> -->
       <div class='upper'>
-          <img src='img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg'>
+          <img src='img/GoTravel Advisor App.png'>
         <div class='bottom'>
           <h3>Project Title 1</h3>
           <ul class='card-list' >
@@ -207,25 +211,119 @@
       </div>
     </div>
   </section>
-  <!-- ==================== PROJECT SECTION ================ -->
-  <section class="work section">
-    <h2 data-heading='My Portfolio' class='section_title'>My Recent Works</h2>
+  <!-- ==================== PROJECTS SECTION ================ -->
+  <section class="project section container">
+    <h1 data-heading='My Projects' class='section_title'>My Recent Works</h1>
 
-    <div class="work_filters">
+    <div class="project_filters">
       <span class='work_item active work'>All</span>
       <span class="work_item">Web</span>
       <span class="work_item">App</span>
       <span class="work_item">Design</span>
     </div>
 
-    <div class='work_container container'>
-      <div class="work_card">
-        <img src="img/GoTravel Advisor App.png" class='work_img' alt="">
-        <h3 class="work_title">Web Design</h3>
-        <span class='work_button'>Demo
+    <div class='project_container'>
+      <div class="project_card">
+        <div class='img'>
+          <img src="img/App.png" class='project_img' alt="">
+        </div>
+        <!-- <h1 class="work_title">Web Design</h1> -->
+        <span class='pjt_button'>Demo
+          <i class="fa-solid fa-arrow-right project_button-icon"></i>
+        </span>
+        <div class="project_item-details">
+          <h2 class="project_title">Project 1</h2>
+          <h3 class='project_details-title'>Capstone Project</h3>
+          <p class='project_description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Repellendus, quod alias cum odio dolore saepe voluptas. Possimus distinctio saepe qui cumque! Atque voluptatibus, totam ipsam sapiente perspiciatis facilis quo nemo.</p>
+          <ul class='project_info'>
+            <li>Created - <span>26 May 2022</span></li>
+            <li>Technologies Used - <span>React JS, UI Design, JavaScript, API Call</span></li>
+            <li>Role - <span>frontend</span></li>
+             <a href="https://github.com/ShakzOloyed/Our-Travel-Tour-Guide-App/tree/main/src" class='project_button' target='_blank'>
+              <i class="fa-brands fa-github"></i>View on GitHub
+            </a>
+            </li>
+            <a href="https://gotravel-advisor.netlify.app/" class='project_button' target='_blank'>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>App Netlify
+            </a>
+          </ul>  
+        </div>
+        
+      </div>
+
+      <div class="project_card">
+        <div>
+          <img src="img/GoTravel Advisor App.png" class='project_img' alt="">
+        </div>
+        <!-- <h1 class="work_title">Web Design</h1> -->
+        <span class='pjt_button'>Demo
+          <i class="fa-solid fa-arrow-right project_button-icon"></i>
+        </span>
+        <div class="project_item-details">
+          <h1 class="project_title">Project 1</h1>
+          <h3 class='project_details-title'>Capstone Project</h3>
+          <p class='project_description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Repellendus, quod alias cum odio dolore saepe voluptas. Possimus distinctio saepe qui cumque! Atque voluptatibus, totam ipsam sapiente perspiciatis facilis quo nemo.</p>
+          <ul class='project_info'>
+            <li>Created - <span>26 May 2022</span></li>
+            <li>Technologies Used - <span>React JS, UI Design, JavaScript, API Call</span></li>
+            <li>Role - <span>frontend</span></li>
+             <a href="https://github.com/ShakzOloyed/Our-Travel-Tour-Guide-App/tree/main/src" class='project_button' target='_blank'>
+              <i class="fa-brands fa-github"></i>View on GitHub
+            </a>
+            </li>
+            <a href="https://gotravel-advisor.netlify.app/" class='project_button' target='_blank'>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>App Netlify
+            </a>
+          </ul>  
+        </div>
+        
+      </div>
+
+      <div class="project_card">
+        <div>
+          <img src="img/GoTravel Advisor App.png" class='project_img' alt="">
+        </div>
+        <!-- <h1 class="work_title">Web Design</h1> -->
+        <span class='pjt_button'>Demo
+          <i class="fa-solid fa-arrow-right project_button-icon"></i>
+        </span>
+        <div class="project_item-details">
+          <h1 class="project_title">Project 1</h1>
+          <h3 class='project_details-title'>Capstone Project</h3>
+          <p class='project_description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Repellendus, quod alias cum odio dolore saepe voluptas. Possimus distinctio saepe qui cumque! Atque voluptatibus, totam ipsam sapiente perspiciatis facilis quo nemo.</p>
+          <ul class='project_info'>
+            <li>Created - <span>26 May 2022</span></li>
+            <li>Technologies Used - <span>React JS, UI Design, JavaScript, API Call</span></li>
+            <li>Role - <span>frontend</span></li>
+             <a href="https://github.com/ShakzOloyed/Our-Travel-Tour-Guide-App/tree/main/src" class='project_button' target='_blank'>
+              <i class="fa-brands fa-github"></i>View on GitHub
+            </a>
+            </li>
+            <a href="https://gotravel-advisor.netlify.app/" class='project_button' target='_blank'>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>App Netlify
+            </a>
+          </ul>  
+        </div>
+        
+      </div>
+
+
+    </div>
+
+    <!-- <div class='projects_container'>
+      <div class="projects_card">
+        <div>
+          <img src="img/GoTravel Advisor App.png" class='work_img' alt="">
+        </div> -->
+        <!-- <h1 class="work_title">Web Design</h1> -->
+        <!-- <span class='projects_button'>Demo
           <i class="fa-solid fa-arrow-right work_button-icon"></i>
         </span>
-        <div class="portfolio_item-details">
+        <div class="projects_item-details">
+          <h1 class="work_title">Project 1</h1>
           <h3 class='details_title'>Capstone Project</h3>
           <p class='details_description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Repellendus, quod alias cum odio dolore saepe voluptas. Possimus distinctio saepe qui cumque! Atque voluptatibus, totam ipsam sapiente perspiciatis facilis quo nemo.</p>
@@ -233,24 +331,26 @@
             <li>Created - <span>26 May 2022</span></li>
             <li>Technologies Used - <span>React JS, UI Design, JavaScript, API Call</span></li>
             <li>Role - <span>frontend</span></li>
-            <li>GitHub Link - <a href="https://github.com/ShakzOloyed/Our-Travel-Tour-Guide-App/tree/main/src" target='_blank'>
-              <i class="fa-brands fa-github"></i>
+             <a href="https://github.com/ShakzOloyed/Our-Travel-Tour-Guide-App/tree/main/src" class='wrk_button' target='_blank'>
+              <i class="fa-brands fa-github"></i>View on GitHub
             </a>
             </li>
-            <a href="https://gotravel-advisor.netlify.app/" target='_blank'>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <a href="https://gotravel-advisor.netlify.app/" class='wrk_button' target='_blank'>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>App Netlify
             </a>
           </ul>  
         </div>
+        
       </div>
-    </div>
+    </div> -->
+
   </section>
 
-  <!-- =========  Contact Info  ============== -->
+  <!-- =========  CONTACT INFO  ============== -->
 
-  <section class='contact section' id='contact'>
+  <section class='contact section container' id='contact'>
     <h2 data-heading="Get in touch" class='section_title'>Contact Me</h2>
-    <div class="contact_container container grid">
+    <div class="contact_container">
       <div class="contact_content">
         <div class="contact_info">
           <div class="contact_card">
@@ -329,13 +429,7 @@
       <i class="fa-brands fa-linkedin"></i>
     </a>
   </div>
-
-
-
-
-
   </footer>
-
   <script src="app.js"></script>
 </body>
 

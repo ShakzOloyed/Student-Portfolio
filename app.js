@@ -1,17 +1,18 @@
 const hamburgerIcon = document.querySelector(".hamburger-icon");
-const menuItems = document.querySelector(".nav-menu");
+const menuItems = document.querySelectorAll(".nav-menu");
 
-hamburgerIcon.addEventListener("click", (e) => {
+console.log("Hello");
+
+  hamburgerIcon.addEventListener("click", () => {
   hamburgerIcon.classList.toggle("active");
   menuItems.classList.toggle("active");
-  console.log("click");
+
 });
 
-// document.querySelector(".nav-links").forEach((n) =>
-//   n.addEventListener("click", () => {
-//     hamburgerIcon.classList.remove("active");
-//     menuItems.classList.remove("active");
-//   })
-// );
+document.querySelector(".nav-links").forEach (n => n.addEventListener("click", () => {
+  hamburgerIcon.classList.remove("active");
+  menuItems.classList.remove("active");
+
+}));
 
 // INPUT ANIMATION

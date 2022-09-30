@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student-Portfolio</title>
-
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,45 +15,45 @@
     crossorigin="anonymous">
   </script>
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-  
   <!-- main styling sheet -->
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
   <!-- ============= HEADER SECTION =============== -->
-  <header>
-      <div id='logo'><a href="#"><span>S</span>hak<span>i</span>rat</a></div>
-    <nav class='nav-menu'>
-        <ul>
-          <li><a href="#" class='menu-item'>Home</a></li>
-          <li><a href="#" class='menu-item'>About</a></li>
-          <li><a href="#" class='menu-item'>My Skills</a></li>
-          <li><a href="#" class='menu-item'>Portfolio</a></li>
-          <li><a href="#" class='menu-item'>Recent Works</a></li>
-          <li><a href="#" class='menu-item'>Contact</a></li>  
-        </ul>
-      </nav>      
-        
+  <section id="header">
+    <header class='header container'>
+      <nav class='nav-menu'>
+        <div id='logo'>
+          <a href="#hero"><h1><span>S</span>hak<span>i</span>rat</h1></a>
+        </div>
+        <div class="menu-list">
         <div class="hamburger-icon">
-          <a href="#"><i class="menu-icon fa-solid fa-bars"></i>
-          </a>
-          <a href="#"><i class="close-icon fa-solid fa-xmark"></i>
-          </a>
+          <div class='bar'></div>
         </div>  
-  </header>
-
-  <!-- ============ HERO/HOME SECTION ============= -->
+        <ul>
+          <li><a href="#hero" data-after="Home">Home</a></li>
+          <li><a href="#about" data-after="About">About</a></li>
+          <li><a href="#skills" data-after="My Skills">My Skills</a></li>
+          <li><a href="#services" data-after="Services">Services</a></li>
+          <li><a href="#recent works" data-after="Recent Works">Recent Works</a></li>
+          <li><a href="#contact" data-after="Contact">Contact</a></li>  
+        </ul>
+      </div>
+      </nav>      
+    </header>
+  </section>
   <main>
-  <section class='hero'>
+  <!-- ============ HERO/HOME SECTION ============= -->
+  <section id="hero">
+    <div class="hero container">
     <div class='hero-text'>
       <h1>HI, I'M SHAKIRAT BLOGS</h1>
       <h2>I'm a <span>Front-End Developer</span> from London</h2>
       <!-- <button>Contact Me</button> -->
-      <a href="#about" class="hero_button"><i class="fa-solid fa-user"></i>More About Me</a>
-
+      <a href="#about" class="hero_button"><i class="fa-solid fa-user"></i>About Me</a>
     </div>
-      <div class='nav'>
+      <div class='hero-icon'>
         <a href=""><i class="fa-brands fa-github"></i></a>
         <a href=""><i class="fa-brands fa-linkedin"></i></a>
         <a href=""><i class="fa-solid fa-envelope"></i></a>
@@ -65,35 +63,35 @@
         <h2>I'm a <span>Front-End Developer</span> from London</h2>
         <button>Contact Me</button>
       </div> -->
+    <!-- </div> -->
   </section>
   <!-- =================== ABOUT SECTION ==================== -->
-  <section class='about section' id='aboutMe'>
+  <section class='about section' id='about'>
     <h2 data-heading="My Intro" class='section_title'>About Me</h2>
     <div class='about_container container'>
           <img src="img/christina-wocintechchat-com-L85a1k-XqH8-unsplash.jpg" alt="" class='about_img'>
       <!-- <img src="img/christina-wocintechchat-com-L85a1k-XqH8-unsplash.jpg" alt="" class='about_img'> -->
-    
         <div class='about_data'>
           <h3>I'm a Front End Developer from London, UK</h3> 
           <p>I have experience in responsive CSS, JavaScript, React and UI Design and have
           just finished a Bootscamp with Purple Beard. </p>
           <div class="about_info">
               <div class="about_box">
-                <i class="fa-solid fa-file-certificate about_icon"></i>
-                <h3 class="about_title">Completed</h3>
+                <i class="fa-solid fa-folder about_icon"></i>               
+                <h3 class="about_title">Projects</h3>
                 <span class="about_subtitle">3 Project</span>
               </div>
 
               <div class="about_box">
-                <i class="fa-solid fa-suitcase about_icon"></i>
-                <h3 class="about_title">Support</h3>
-                <span class="about_subtitle">Online 24/7</span>
+                <i class="fa-solid fa-envelope about_icon"></i>
+                <h3 class="about_title">Email</h3>
+                <span class="about_subtitle">Online</span>
               </div>
 
               <div class="about_box">
                 <i class="fa-solid fa-headphones about_icon"></i>
-                <h3 class="about_title">sgrgg</h3>
-                <span class="about_subtitle">esfrgesb</span>
+                <h3 class="about_title">Phone</h3>
+                <span class="about_subtitle">07506624384</span>
               </div>
             <a href="#contact" class="about_button"><i class="fa-solid fa-user button icon"></i> Contact Me
             </a>
@@ -167,13 +165,13 @@
   </section>
   <!-- ====================== SERVICES SECTION ================== -->
 
-  <section class='portfolio container'>
-    <h2 data-heading='My Services' class='section_title'>Services</h2>
+  <!-- <section class='portfolio container' id='services'>
+    <h2 data-heading='My Services' class='section_title'>Services</h2> -->
 
     <!-- <div class='portfolioTitle'><h2>Portfolio</h2></div> -->
-      <!-- <div class='container'> -->
+      <!-- <div class='container'>
       <div class='upper'>
-          <img src='img/GoTravel Advisor App.png'>
+          <img src='img/GoTravel Advisor App.png' class='portfolio-img' alt="">
         <div class='bottom'>
           <h3>Project Title 1</h3>
           <ul class='card-list' >
@@ -184,20 +182,20 @@
           </ul>
         </div>
       </div>
-    <!-- <div class='container'> -->
+    <div class='container'>
     <div class='upper'>
-        <img src="img/pexels-pixabay-276452.jpg" alt="">
+        <img src="img/pexels-pixabay-276452.jpg" class='portfolio-img' alt="">
       <div class='bottom'>
         <h3>Project Title 2</h3>
         <ul class='card-list'>
-          <li>Live Website Link:</li>
+          <li>Live Website Link:</li>?%
           <li>GitHub Link:</li>
           <li>Technologies Used: CSS, JavaScript, React</li>
           <li>Summary: An CRUD app</li>
         </ul>
       </div>
     </div>
-    <!-- <div class='container'> -->
+    <div class='container'>
     <div class='upper'>
         <img src="img/pexels-lukas-574071.jpg" alt="">
       <div class='bottom'>
@@ -210,11 +208,10 @@
         </ul>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- ==================== PROJECTS SECTION ================ -->
-  <section class="project section container">
+  <section class="project section container" id='recent works'>
     <h1 data-heading='My Portfolio' class='section_title'>My Recent Projects</h1>
-
     <div class="project_filters">
       <span class='work_item active work'>All</span>
       <span class="work_item">Web</span>
@@ -222,15 +219,12 @@
       <span class="work_item">Design</span>
     </div>
 
-    <div class='project_container'>
+    <div class='projecct_container'>
       <div class="project_card">
-        <div class='img'>
-          <img src="img/App.png" class='project_img' alt="">
+        <div class='project-img'>
+          <img src="./img/App.png" alt="img">
         </div>
         <!-- <h1 class="work_title">Web Design</h1> -->
-        <span class='pjt_button'>Demo
-          <i class="fa-solid fa-arrow-right project_button-icon"></i>
-        </span>
         <div class="project_item-details">
           <h2 class="project_title">Project 1</h2>
           <h3 class='project_details-title'>Capstone Project</h3>
@@ -253,15 +247,12 @@
       </div>
 
       <div class="project_card">
-        <div>
-          <img src="img/GoTravel Advisor App.png" class='project_img' alt="">
+        <div class='project-img'>
+          <img src="./img/App.png" alt="img">
         </div>
         <!-- <h1 class="work_title">Web Design</h1> -->
-        <span class='pjt_button'>Demo
-          <i class="fa-solid fa-arrow-right project_button-icon"></i>
-        </span>
         <div class="project_item-details">
-          <h1 class="project_title">Project 1</h1>
+          <h1 class="project_title">Project 2</h1>
           <h3 class='project_details-title'>Capstone Project</h3>
           <p class='project_description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Repellendus, quod alias cum odio dolore saepe voluptas. Possimus distinctio saepe qui cumque! Atque voluptatibus, totam ipsam sapiente perspiciatis facilis quo nemo.</p>
@@ -282,15 +273,12 @@
       </div>
 
       <div class="project_card">
-        <div>
-          <img src="img/GoTravel Advisor App.png" class='project_img' alt="">
+        <div class='project-img'>
+          <img src="img/GoTravel Advisor App.png" alt="img">
         </div>
         <!-- <h1 class="work_title">Web Design</h1> -->
-        <span class='pjt_button'>Demo
-          <i class="fa-solid fa-arrow-right project_button-icon"></i>
-        </span>
         <div class="project_item-details">
-          <h1 class="project_title">Project 1</h1>
+          <h1 class="project_title">Project 3</h1>
           <h3 class='project_details-title'>Capstone Project</h3>
           <p class='project_description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Repellendus, quod alias cum odio dolore saepe voluptas. Possimus distinctio saepe qui cumque! Atque voluptatibus, totam ipsam sapiente perspiciatis facilis quo nemo.</p>
@@ -310,39 +298,34 @@
         
       </div>
 
-
+    </div>
+    <div class="project_card">
+      <div class='project-img'>
+        <img src="img/GoTravel Advisor App.png" alt="img">
+      </div>
+      <!-- <h1 class="work_title">Web Design</h1> -->
+      <div class="project_item-details">
+        <h1 class="project_title">Project 3</h1>
+        <h3 class='project_details-title'>Capstone Project</h3>
+        <p class='project_description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Repellendus, quod alias cum odio dolore saepe voluptas. Possimus distinctio saepe qui cumque! Atque voluptatibus, totam ipsam sapiente perspiciatis facilis quo nemo.</p>
+        <ul class='project_info'>
+          <li>Created - <span>26 May 2022</span></li>
+          <li>Technologies Used - <span>React JS, UI Design, JavaScript, API Call</span></li>
+          <li>Role - <span>frontend</span></li>
+           <a href="https://github.com/ShakzOloyed/Our-Travel-Tour-Guide-App/tree/main/src" class='project_button' target='_blank'>
+            <i class="fa-brands fa-github"></i>View on GitHub
+          </a>
+          </li>
+          <a href="https://gotravel-advisor.netlify.app/" class='project_button' target='_blank'>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>App Netlify
+          </a>
+        </ul>  
+      </div>
+      
     </div>
 
-    <!-- <div class='projects_container'>
-      <div class="projects_card">
-        <div>
-          <img src="img/GoTravel Advisor App.png" class='work_img' alt="">
-        </div> -->
-        <!-- <h1 class="work_title">Web Design</h1> -->
-        <!-- <span class='projects_button'>Demo
-          <i class="fa-solid fa-arrow-right work_button-icon"></i>
-        </span>
-        <div class="projects_item-details">
-          <h1 class="work_title">Project 1</h1>
-          <h3 class='details_title'>Capstone Project</h3>
-          <p class='details_description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Repellendus, quod alias cum odio dolore saepe voluptas. Possimus distinctio saepe qui cumque! Atque voluptatibus, totam ipsam sapiente perspiciatis facilis quo nemo.</p>
-          <ul class='details_info'>
-            <li>Created - <span>26 May 2022</span></li>
-            <li>Technologies Used - <span>React JS, UI Design, JavaScript, API Call</span></li>
-            <li>Role - <span>frontend</span></li>
-             <a href="https://github.com/ShakzOloyed/Our-Travel-Tour-Guide-App/tree/main/src" class='wrk_button' target='_blank'>
-              <i class="fa-brands fa-github"></i>View on GitHub
-            </a>
-            </li>
-            <a href="https://gotravel-advisor.netlify.app/" class='wrk_button' target='_blank'>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>App Netlify
-            </a>
-          </ul>  
-        </div>
-        
-      </div>
-    </div> -->
+  </div>
 
   </section>
 
@@ -354,16 +337,18 @@
       <div class="contact_content">
         <div class="contact_info">
           <div class="contact_card">
-            <i class="fa-solid fa-envelope" class='contact_card-icon'></i>
+            <a href="mailto:bim0514@hotmail.co.uk? subject=subject text">
+              <i class="fa-solid fa-envelope contact_card-icon"></i>
+            </a>
             <h3 class='contact_card-title' >My Email</h3>
-            <span class='contact_card-data' >user@hotmail.co.uk</span>
-            <span class='contact_button'>
+            <span class='contact_card-data' >bim0514@hotmail.co.uk</span>
+            <!-- <span class='contact_button'>
               Write me <i class="fa-solid fa-arrow-right"></i>
-            </span>
+            </span> -->
           </div>
 
           <div class="contact_card">
-            <i class="fa-solid fa-share-nodes" class='contact_card-icon'></i>
+            <i class="fa-solid fa-share-nodes contact_card-icon"></i>
             <h3 class='contact_card-title'>Social Profile</h3>
             <div class='social_links'>
               <a href="https://github.com/ShakzOloyed" target='_blank'>
@@ -376,8 +361,10 @@
           </div>
 
           <div class="contact_card">
-            <i class="fa-solid fa-phone" class='contact_card-icon'></i>
-            <h3 class='contact_card-title' >Call Me</h3>
+            <i class="fa-solid fa-phone contact_card-icon"></i>
+            <!-- <h3 class='contact_card-title' >Call Me</h3> -->
+            <a href="tel:07506624384"><h3 class='contact_card-title' >Call Me</h3>
+            </a>
             <span class='contact_card-data' >+44 7506624384</span>
           </div>
         </div>  

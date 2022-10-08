@@ -350,7 +350,7 @@ img {
   background-color: rgb(66, 106, 141);
 } */
 
-/* ========= ABOUT STYLE ====== */
+/* ========= About Style Section ====== */
 .about{
   color: white;
 }
@@ -484,17 +484,18 @@ img {
 
 
   /* ============== Skills Section ============== */
-  .skills {
-    flex-direction: column;
-    max-width: 1500px;
-    /* margin: 0 auto; */
-    padding: 100px 0;
+.skills {
+  flex-direction: column;
+  max-width: 1500px;
+  /* margin: 0 auto; */
+  padding: 100px 0;
   }
   
 .skills_container {
   grid-template-columns: 360px;
-  column-gap: 3rem;
+  row-gap: 3rem;
   justify-content: center;
+  margin-top: 50px;
 }
 .skills-header {
   display: flex;
@@ -541,7 +542,14 @@ img {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.75rem;
+  color: white;
 }
+.skills-number {
+  font-size: 1.25rem;
+  font-weight: 500;
+
+}
+
 .skills-name {
   font-size: 1.25rem;
   font-weight: 500;
@@ -1204,9 +1212,9 @@ footer {
   /*  ================== SKILLS SECTION FOR MEDIA QUERY  */
 
   .skills_container {
-    grid-template-columns: 360px 320px;
+    /* grid-template-columns: 360px 320px; */
     /* column-gap: 3rem; */
-    justify-content: center;
+    /* justify-content: center; */
   }
   
 
@@ -1293,6 +1301,15 @@ footer {
     padding: 20px 60px;
     font-size: 2.5rem;
   } */
+
+    /*  ================== SKILLS SECTION FOR MEDIA QUERY  */
+
+    .skills_container {
+      grid-template-columns: 460px 420px;
+      column-gap: 3rem;
+      /* justify-content: center; */
+    }
+  
 
   /* =============== HERO STYLE FOR MEDIA QUERY  ================= */
 
